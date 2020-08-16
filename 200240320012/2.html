@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+
+    <style>
+        body,
+        html {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<script src="2.js"></script>
+
+<body>
+    <div class="main"
+        style="display: flex; align-items: center; justify-content: center; height: 100vh; background:linear-gradient(to top,#16222A,#3A6073); font-family: sans-serif;">
+        <div class="form" style="height:450px; display:flex; flex-direction: column; color:whitesmoke">
+            <h1>Simple Form</h1>
+            <form>
+                <div id="userName">
+                    Enter Username
+                    <input type="text" name="" id="input" placeholder="Enter Username" required>
+                </div>
+                <br>
+                <div id="emailAddress">
+                    Enter Email address
+                    <input type="email" name="" id="input" placeholder="Enter Username" required>
+                </div>
+                <br>
+                <div id="password">
+                    Enter password
+                    <input type="password" name="" id="input" placeholder="Enter Username" required>
+                </div>
+
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <button type="submit" id="btn" onclick="btnSubmit()"> Submit</button>
+                </div>
+            </form>
+            <br>
+            <br>
+
+            <!-- To clone -->
+            <div id="clonemain">
+                <div id="clone2" style="visibility: hidden;">
+                    <div id="userAnswer" style="margin-bottom: 10px;">Sample Username
+                    </div>
+                    <div id="emailAnswer" style="margin-bottom: 10px;">
+                        akash.gupta330@gmail.com
+                    </div>
+                    <div id="passwordAnswer" style="margin-bottom: 10px;">
+                        cdac123
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
